@@ -10,5 +10,5 @@ You can use Markdown most places around GitHub:
 * Files with the .md or .markdown extension
 
 ## Examples
-It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Google!](http://google.com)
+It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [Google!](http://google.com)
 
