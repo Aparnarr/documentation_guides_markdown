@@ -5,9 +5,10 @@ Markdown is a way to style text on the web. You control the display of the docum
 
 You can use Markdown most places around GitHub:
 
-*Gists
-*Comments in Issues and Pull Requests
-*Files with the .md or .markdown extension
+* Gists
+* Comments in Issues and Pull Requests
+* Files with the .md or .markdown extension
+
 ## Examples
 It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Google!](http://google.com)
 
