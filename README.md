@@ -8,6 +8,6 @@ You can use Markdown most places around GitHub:
 *Gists
 *Comments in Issues and Pull Requests
 *Files with the .md or .markdown extension
-# Examples
+## Examples
 It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Google!](http://google.com)
 
