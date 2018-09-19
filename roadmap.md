@@ -12,7 +12,7 @@
  # Version 0.3
  The following will be the primary feature focus areas for our upcoming release.
  
- ## Retention Policy Implementation
+ ### Retention Policy Implementation
  Retention policies allow an operator to define a specific Stream size or data age.  Any data beyond this threshold will be automatically purged.
  
  ## Transactions API
