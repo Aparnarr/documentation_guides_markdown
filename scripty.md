@@ -1,5 +1,5 @@
-<script>
-java
+```java class:"lineNo"
+
 public void run() {
    StreamManager streamManager = StreamManager.create(controllerURI);
 
@@ -37,5 +37,5 @@ public void run() {
        } while (event.getEvent() != null);
        System.out.format("No more events from %s/%s%n", scope, streamName);
    }
-</script>
+```
 
