@@ -11,7 +11,7 @@ site_url: 'http://pravega.io/webrefresh'
 site_description: 'Documentation to help you get familiar with Pravega'
 
 repo_url: 'https://github.com/Aparnarr/documentation_guides_markdown'
-edit_uri: 'tree/master'
+edit_uri: 'tree/master/documentation/src/docs'
 
 theme: 'material'
 
