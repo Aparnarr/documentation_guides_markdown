@@ -2,6 +2,8 @@
 jlkdjflkd<sub>1</sub>
 # documentation_guides_markdown [![Build Status](https://travis-ci.com/username/projectname.svg?branch=master)](https://travis-ci.com/username/projectname) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+[![](https://godoc.org/github.com/nathany/looper?status.svg)](http://godoc.org/github.com/nathany/looper)
+
 
 
 
