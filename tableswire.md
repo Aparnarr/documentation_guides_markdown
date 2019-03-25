@@ -149,7 +149,7 @@ The following Paramters will be used by all the below mentioned APIs.
 |-------------|----------| 
 |`GetSegmentAttribute`| The requested list of segment attributes.|
 |`UpdateSegmentAttribute`|-`newValue`: Long (8 bytes). It represents the new value to be updated.
-                          - `expectedValue`: Long (8 bytes). It represents |
+                         |- `expectedValue`: Long (8 bytes). It represents |
                           
 ## Table Segment API
 
