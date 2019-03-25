@@ -184,7 +184,7 @@ The following Paramters will be used by all the below mentioned APIs.
 
 | **API**      | **Description**     |
 |-------------|----------| 
-|`TableEntries tableEntries`| `updatedVersions`: (List<long>). List of Table entried updated.|
+|`TableEntries`| `updatedVersions`: (List<long>). List of Table entried updated.|
 |`RemoveTableKeys`| `keys`: (List<TableKey>). List of Table Keys removed.|
 |`ReadTable` |  `keys`: (List<TableKey>). The version of the key is always set to `io.pravega.segmentstore.contracts.tables.TableKey.NO_VERSION`|
 |`ReadTableKeys`|- `suggestedKeyCount`: (int).|
