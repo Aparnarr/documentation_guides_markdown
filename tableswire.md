@@ -138,7 +138,7 @@ A client can optimize its appending by specifying a large value in it's `AppendB
 
 ## Segment Attribute API
 
-The follwoing Paramters will be used by all the below mentioned APIs.
+The following Paramters will be used by all the below mentioned APIs.
 
 - `RequestId`: Long (8 bytes). This field contains the client-generated _ID_ that has been propagated to identify a client request.
 - `SegmentName`: String (2 bytes) followed by that many bytes of Java's Modified UTF-8. This indicates the name of the Stream Segment.
@@ -153,7 +153,7 @@ The follwoing Paramters will be used by all the below mentioned APIs.
                           
 ## Table Segment API
 
-The follwoing Paramters will be used by all the below mentioned APIs.
+The following Paramters will be used by all the below mentioned APIs.
 
 - `RequestId`: Long (8 bytes). This field contains the client-generated _ID_ that has been propagated to identify a client request.
 - `SegmentName`: String (2 bytes) followed by that many bytes of Java's Modified UTF-8. This indicates the name of the Stream Segment.
@@ -174,7 +174,7 @@ The follwoing Paramters will be used by all the below mentioned APIs.
 
 ## Table API
 
-The follwoing Paramters will be used by all the below mentioned APIs.
+The following Paramters will be used by all the below mentioned APIs.
 
 - `RequestId`: Long (8 bytes). This field contains the client-generated _ID_ that has been propagated to identify a client request.
 - `SegmentName`: String (2 bytes) followed by that many bytes of Java's Modified UTF-8. This indicates the name of the Stream Segment.
