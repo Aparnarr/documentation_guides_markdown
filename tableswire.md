@@ -26,7 +26,7 @@ All the requests and replies have 8 byte headers with two fields (all data is wr
 ## Read Segment - Request
 
 | **Field**      | **Description**     |
-| :------------- | :----------: | 
+|-------------|----------| 
 |  `Segment`|String (2 bytes) followed by that many bytes of Java's Modified UTF-8. This Segment indicates the Stream Segment that was read. | 
 | `Offset`   | Long (8 bytes). The `Offset` in the Stream Segment to read from. |
 | `suggestedLength` of Reply|Integer (4 bytes). The clients can request for the required length to the server (but the server may allot a different number of bytes.|
