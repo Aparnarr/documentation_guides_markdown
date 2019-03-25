@@ -163,14 +163,14 @@ The following Paramters will be used by all the below mentioned APIs.
 | **API**      | **Description**     |
 |-------------|----------| 
 |`CreateTableSegment`| To create Table segment.|
-|`MergeTableSegment`| -`Target`: String (2 bytes) followed by that many bytes of Java's Modified UTF-8. This indicates the target of the Stream Segment to be Merged.
-                      -`Source`: String (2 bytes) followed by that many bytes of Java's Modified UTF-8. This indicates the source Stream Segments that needs to be Merged.|
+|`MergeTableSegment`| -`Target`: String (2 bytes) followed by that many bytes of Java's Modified UTF-8. This indicates the target of the Stream Segment to be Merged.|
+|                    |-`Source`: String (2 bytes) followed by that many bytes of Java's Modified UTF-8. This indicates the source Stream Segments that needs to be Merged.|
 |`MergeSegment`|Perfomrs merging of Segments.|
 |`SealSegment`| Perfoms sealing of Segments.|
 |`SealTableSegment`| Perfoms sealing of Table Segments.|
-|`TruncateSegment`|- `TruncationOffset`: Long (8 bytes). This contains the Offset for the segment to be Truncated.|
+|`TruncateSegment`| `TruncationOffset`: Long (8 bytes). This contains the Offset for the segment to be Truncated.|
 |`DeleteSegment`| Perfoms deletion of created segments.|
-|`DeleteTableSegment`|-`mustBeEmpty` (Boolean): If true, the Table Segment will only be deleted if it is empty (contains no keys).|
+|`DeleteTableSegment`|`mustBeEmpty` (Boolean): If true, the Table Segment will only be deleted if it is empty (contains no keys).|
 
 ## Table API
 
@@ -187,9 +187,9 @@ The following Paramters will be used by all the below mentioned APIs.
 |`TableEntries tableEntries`| `updatedVersions`: (List<long>). List of Table entried updated.|
 |`RemoveTableKeys`| `keys`: (List<TableKey>). List of Table Keys removed.|
 |`ReadTable` |  `keys`: (List<TableKey>). The version of the key is always set to `io.pravega.segmentstore.contracts.tables.TableKey.NO_VERSION`|
-|`ReadTableKeys`|- `suggestedKeyCount`: (int).
-                 - `continuationToken`:(Byte Buf). This is used to indicate the point from which the next keys should be fetched.|
+|`ReadTableKeys`|- `suggestedKeyCount`: (int).|
+|               |- `continuationToken`:(Byte Buf). This is used to indicate the point from which the next keys should be fetched.|
 |`ReadTableEntries`|- `suggestedEntryCount`:(int)
-                    - `continuationToken`:(ByteBuf). This is used to indicate the point from which the next entry should be fetched.
+|                  |- `continuationToken`:(ByteBuf). This is used to indicate the point from which the next entry should be fetched.|
 
  
