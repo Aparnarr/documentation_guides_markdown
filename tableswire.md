@@ -148,7 +148,7 @@ The following Paramters will be used by all the below mentioned APIs.
 | **API**      | **Description**     |
 |-------------|----------| 
 |`GetSegmentAttribute`| The requested list of segment attributes.|
-|`UpdateSegmentAttribute`|-`newValue`: Long (8 bytes). It represents the new value to be updated.|
+|`UpdateSegmentAttribute`|  - `newValue`: Long (8 bytes). It represents the new value to be updated.|
 | |                         - `expectedValue`: Long (8 bytes). It represents |
                           
 ## Table Segment API
@@ -157,14 +157,14 @@ The following Paramters will be used by all the below mentioned APIs.
 
 - `RequestId`: Long (8 bytes). This field contains the client-generated _ID_ that has been propagated to identify a client request.
 - `SegmentName`: String (2 bytes) followed by that many bytes of Java's Modified UTF-8. This indicates the name of the Stream Segment.
-- `delegationToken`:String (2 byte) followed by that many bytes of Java's Modified UTF-8. This was added to perform _auth_. It is an opaque-to-the-client token provided by the Controller that says it's allowed to make this call. 
+- `delegationToken`: String (2 byte) followed by that many bytes of Java's Modified UTF-8. This was added to perform _auth_. It is an opaque-to-the-client token provided by the Controller that says it's allowed to make this call. 
 
 
 | **API**      | **Description**     |
 |-------------|----------| 
 |`CreateTableSegment`| To create Table segment.|
-|`MergeTableSegment`| -`Target`: String (2 bytes) followed by that many bytes of Java's Modified UTF-8. This indicates the target of the Stream Segment to be Merged.|
-|                    |-`Source`: String (2 bytes) followed by that many bytes of Java's Modified UTF-8. This indicates the source Stream Segments that needs to be Merged.|
+|`MergeTableSegment`| - `Target`: String (2 bytes) followed by that many bytes of Java's Modified UTF-8. This indicates the target of the Stream Segment to be Merged.|
+|                    |- `Source`: String (2 bytes) followed by that many bytes of Java's Modified UTF-8. This indicates the source Stream Segments that needs to be Merged.|
 |`MergeSegment`|Perfomrs merging of Segments.|
 |`SealSegment`| Perfoms sealing of Segments.|
 |`SealTableSegment`| Perfoms sealing of Table Segments.|
@@ -178,7 +178,7 @@ The following Paramters will be used by all the below mentioned APIs.
 
 - `RequestId`: Long (8 bytes). This field contains the client-generated _ID_ that has been propagated to identify a client request.
 - `SegmentName`: String (2 bytes) followed by that many bytes of Java's Modified UTF-8. This indicates the name of the Stream Segment.
-- `delegationToken`:String (2 byte) followed by that many bytes of Java's Modified UTF-8. This was added to perform _auth_. It is an opaque-to-the-client token provided by the Controller that says it's allowed to make this call. 
+- `delegationToken`: String (2 byte) followed by that many bytes of Java's Modified UTF-8. This was added to perform _auth_. It is an opaque-to-the-client token provided by the Controller that says it's allowed to make this call. 
 -`TableEntries` : tableEntries;
 
 
@@ -188,8 +188,8 @@ The following Paramters will be used by all the below mentioned APIs.
 |`RemoveTableKeys`| `keys`: (List<TableKey>). List of Table Keys removed.|
 |`ReadTable` |  `keys`: (List<TableKey>). The version of the key is always set to `io.pravega.segmentstore.contracts.tables.TableKey.NO_VERSION`|
 |`ReadTableKeys`|- `suggestedKeyCount`: (int).|
-|               |- `continuationToken`:(Byte Buf). This is used to indicate the point from which the next keys should be fetched.|
-|`ReadTableEntries`|- `suggestedEntryCount`:(int)
-|                  |- `continuationToken`:(ByteBuf). This is used to indicate the point from which the next entry should be fetched.|
+|               |- `continuationToken`: (Byte Buf). This is used to indicate the point from which the next keys should be fetched.|
+|`ReadTableEntries`|- `suggestedEntryCount`: (int)
+|                  |- `continuationToken`: (ByteBuf). This is used to indicate the point from which the next entry should be fetched.|
 
  
